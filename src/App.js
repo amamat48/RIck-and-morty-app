@@ -1,7 +1,6 @@
 import './App.css';
 import { useState, useEffect } from "react"
 import { Route, Routes } from "react-router-dom"
-import axios from "axios"
 import Home from "./pages/Home"
 import Locations from "./pages/Locations"
 import Characters from "./pages/Characters"
@@ -10,25 +9,25 @@ import Nav from "./components/Nav"
 
 function App() {
 
-  const [charList, setCharList] = useState([])
-  const [locations, setLocations] = useState({})
-  const [episodes, setEpisodes] = useState({})
+  const [charList, setCharList] = useState(null)
+  const [locations, setLocations] = useState(null)
+  const [episodes, setEpisodes] = useState(null)
 
   async function getAllCharacters() {
     const response = await fetch("https://rickandmortyapi.com/api/character")
-    const data = response.json()
-    setCharList(data.results)
+    const data = await response.json()
+    return data.results
   }
 
-  //
+
+
 
 
 
   async function getAllLocations() {
     const response = await fetch("https://rickandmortyapi.com/api/location")
-    const data = response.json()
-    console.log(response.json())
-    setLocations(data.results)
+    const data = await response.json()
+    return data.results
   }
 
 
@@ -37,15 +36,20 @@ function App() {
 
   async function getAllEpisodes() {
     const response = await fetch("https://rickandmortyapi.com/api/episode")
-    const data = response.json()
-    setEpisodes(data)
+    const data = await response.json()
+    return data.results
   }
 
   useEffect(() => {
-
-    getAllCharacters()
-    getAllLocations()
-    getAllEpisodes()
+    async function fetchData() {
+      const charData = await getAllCharacters()
+      const locationData = await getAllLocations()
+      const episodeData = await getAllEpisodes()
+      setCharList(charData)
+      setLocations(locationData)
+      setEpisodes(episodeData)
+    }
+    fetchData()
 
   },[])
 

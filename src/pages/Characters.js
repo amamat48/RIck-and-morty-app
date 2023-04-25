@@ -1,21 +1,17 @@
 import React from 'react'
-
+import CharacterCard from '../components/CharacterCard'
 export default function Characters({ characters }) {
-
-    if (!characters) {
-        return <div>Loading...</div>;
-      }
 
   return (
     <div>
-        {characters.map((character) => {
+        {characters? characters.map((character, id) => {
             return(
-                <div className="character">
-                    <h1>{character.name}</h1>
+                <div key={id}>
+                    <CharacterCard props={characters}/>
 
                 </div>
             )
-        })}
+        }) : <div>loading...</div>}
     </div>
   )
 }

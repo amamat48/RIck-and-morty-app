@@ -8,8 +8,7 @@ export default function EpisodeCard({ props }) {
                     <div className="card" key={episode.id}>
                         <div className="cardBody">
                             <h2 className="name">{episode.name}</h2>
-                            <p>Type: {episode.air_date}</p>
-                            <p>Dimension: {episode.dimension}</p>
+                            <p>Air Date: {episode.air_date}</p>
 
                         </div>
 

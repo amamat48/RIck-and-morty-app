@@ -1,3 +1,8 @@
+
+body {
+  background: linear-gradient(55deg, #2B9348, #EEEF20, #007F5F);
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -47,5 +52,43 @@ img {
 
 .locationCard{
   width: 100px;
+}
+
+.container {
+  display: flex;
+  border: 2px solid black;
+}
+
+.characterCardBody {
+  border: solid black;
+  margin: 3em;
+  border-radius: 5em;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.singleCharacterBox {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(black, lightgray);
+  border-radius: 3em;
+  text-align: center;
+  width: 75%;
+  margin-top: 2em;
+  margin-left: 11em;
+}
+
+.singleCharacterImg {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 4em;
+  margin-top: 10%;
+  width: 40%;
+  height: 50%;
+}
+
+.boxText {
+  font-size: 2em;
 }
 

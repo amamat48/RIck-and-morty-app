@@ -2,23 +2,18 @@ import React from 'react'
 
 export default function CharacterCard({ props }) {
     return (
-        <div className="characterContainer">
-            {props.map((character) => {
-                return (
-                    <div className="card" key={character.id}>
-                        <div className="cardBody">
-                            <h2 className="name">{character.name}</h2>
-                            <img src={character.image} alt={character.name}/>
-                            <p>Status: {character.status}</p>
-                            <p>Species: {character.species}</p>
-                            <p>Gender: {character.gender}</p>
+        <div>
+            <div className="characterCard" key={props.id}>
+                <div className="characterCardBody">
+                    <h2 className="name">{props.name}</h2>
+                    <img src={props.image} alt={props.name} />
+                    <p>Status: {props.status}</p>
+                    <p>Species: {props.species}</p>
+                    <p>Gender: {props.gender}</p>
+                </div>
 
-                        </div>
+            </div>
 
-                    </div>
-                )
-
-        })}
         </div>
     )
 }

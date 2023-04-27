@@ -19,6 +19,9 @@ export default function Nav() {
         <div>Episodes</div>
       </Link>
 
+    <Link to="/search">
+      <div>Search</div>
+    </Link>
 
     </div>
   )

@@ -9,6 +9,7 @@ import Episodes from './pages/Episodes';
 import Nav from "./components/Nav"
 import SingleCharacter from "./pages/SingleCharacter"
 import SingleLocation from './pages/SingleLocation';
+import Search from './pages/Search';
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
         <Route path="/episodes" element={<Episodes episodes={episodes}/>}/>
         <Route path="/singleCharacter/:id" element={<SingleCharacter characters={charList}/>} />
         <Route path="/singleLocation/:id" element={<SingleLocation locations = {locations}/>}/>
+        <Route path="/search" element={<Search />}/>
       </Routes>
     </div>
   );

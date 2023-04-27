@@ -30,7 +30,7 @@ export async function getAllEpisodes() {
     return data.results
   }
 
-export async function getCharacterbyName(inputValue) {
+export async function getCharacterByName(inputValue) {
   const response = await fetch(`https://rickandmortyapi.com/api/character/?name=${inputValue}`)
   const data = await response.json()
   return data.results

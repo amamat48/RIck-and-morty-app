@@ -1,6 +1,5 @@
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from "react"
-import LocationCard from '../components/LocationCard'
 import { getSingleLocation } from '../services/get-info'
 
 export default function SingleLocation(props) {

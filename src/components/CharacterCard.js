@@ -7,9 +7,9 @@ export default function CharacterCard({ props }) {
                 <div className="characterCardBody">
                     <h2 className="name">{props.name}</h2>
                     <img src={props.image} alt={props.name} />
-                    <p>Status: {props.status}</p>
-                    <p>Species: {props.species}</p>
-                    <p>Gender: {props.gender}</p>
+                    <p className='boxText'>Status: {props.status}</p>
+                    <p className='boxText'>Species: {props.species}</p>
+                    <p className='boxText'>Gender: {props.gender}</p>
                 </div>
 
             </div>

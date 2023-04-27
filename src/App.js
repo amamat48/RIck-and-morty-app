@@ -8,6 +8,7 @@ import Characters from "./pages/Characters"
 import Episodes from './pages/Episodes';
 import Nav from "./components/Nav"
 import SingleCharacter from "./pages/SingleCharacter"
+import SingleLocation from './pages/SingleLocation';
 
 function App() {
 
@@ -46,6 +47,7 @@ function App() {
         <Route path="/characters" element={<Characters characters={charList} page={page} setPage={setPage}/>}/>
         <Route path="/episodes" element={<Episodes episodes={episodes}/>}/>
         <Route path="/singleCharacter/:id" element={<SingleCharacter characters={charList}/>} />
+        <Route path="/singleLocation/:id" element={<SingleLocation locations = {locations}/>}/>
       </Routes>
     </div>
   );

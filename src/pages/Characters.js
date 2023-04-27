@@ -15,18 +15,20 @@ export default function Characters({ characters, page, setPage }) {
 
   return (
     <div>
-      <p>Click on a card to view more information *buuuuuuuuuuuuurp*</p>
-        {characters? characters.map((character, id) => {
-            return(
-                <Link to={`/singleCharacter/${id}`}>
-                    <CharacterCard props={character}/>
+      <h2 id='information'>Click on a card to view more information *buuuuuuuuuuuuurp*</h2>
+      {characters ? characters.map((character, id) => {
+        return (
+          <Link to={`/singleCharacter/${id}`}>
+            <CharacterCard props={character} />
 
-                </Link>
-            )
-        }) : <div>loading...</div>}
-        {page < 42? <button onClick={nextPage}>Next Page</button> : <></>}
+          </Link>
+        )
+      }) : <div>loading...</div>}
+      <div className='buttonContainer'>
+        {page < 42 ? <button onClick={nextPage}>Next Page</button> : <></>}
 
-        {page > 1?<button onClick={prevPage}> Previous Page</button> : <></>}
+        {page > 1 ? <button onClick={prevPage}> Previous Page</button> : <></>}
+      </div>
     </div>
   )
 }

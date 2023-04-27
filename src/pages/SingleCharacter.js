@@ -28,7 +28,9 @@ export default function SingleCharacter(props) {
         <p className='boxText'>Status: {character.status}</p>
         <p className='boxText'>Species: {character.species}</p>
         <p className='boxText'>Gender: {character.gender}</p>
-        <p>Origin: {character.origin.name}</p>
+        <p className='boxText'>Origin: {character.origin.name}</p>
+        <p className='boxText'>Location: {character.location.name}</p>
+        <p className='boxText'>Date Create: {character.created}</p>
       </div> : <div>loading</div>}
     </>
   )

@@ -2,21 +2,17 @@ import React from 'react'
 
 export default function LocationCard({ props }) {
     return (
-        <div className="characterContainer">
-            {props.map((location) => {
-                return (
-                    <div className="card" key={location.id}>
-                        <div className="cardBody">
-                            <h2 className="name">{location.name}</h2>
-                            <p>Type: {location.type}</p>
-                            <p>Dimension: {location.dimension}</p>
+        <div>
+            <div className="characterCard" key={props.id}>
+                <div className="characterCardBody">
+                    <h1 className="name">{props.name}</h1>
+                    <p className='boxText'>Type: {props.type}</p>
+                    <p className='boxText'>Dimension: {props.dimension}</p>
+                    <p className='boxText'>Gender: {props.gender}</p>
+                </div>
 
-                        </div>
+            </div>
 
-                    </div>
-                )
-
-        })}
         </div>
     )
 }

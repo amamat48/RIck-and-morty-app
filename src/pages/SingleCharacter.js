@@ -6,7 +6,6 @@ import { getSingleCharcter } from '../services/get-info'
 export default function SingleCharacter(props) {
   let { id } = useParams()
   let newId = parseInt(id)
-  newId += 1
 
   const [character, setCharacter] = useState(null)
 

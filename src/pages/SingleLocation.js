@@ -5,7 +5,6 @@ import { getSingleLocation } from '../services/get-info'
 export default function SingleLocation(props) {
     let { id } = useParams()
     let newId = parseInt(id)
-    newId += 1
 
     const [location, setLocation] = useState(null)
 

@@ -17,6 +17,7 @@ function App() {
   const [locations, setLocations] = useState(null)
   const [episodes, setEpisodes] = useState(null)
   const [page, setPage] = useState(1)
+  const [locationPage, setLocationPage] = useState(1)
 
 
 
@@ -39,12 +40,20 @@ function App() {
     setCharPage()
   }, [page])
 
+  useEffect(() => {
+    async function setLocPage() {
+    const locData = await getAllLocations(locationPage)
+    setLocations(locData)
+    }
+    setLocPage()
+  }, [locationPage])
+
   return (
     <div>
       <Nav />
       <Routes>
         <Route path="/" element={<Home locations={locations} characters={charList} episodes={episodes}/>}/>
-        <Route path="/locations" element={<Locations locations = {locations}/>}/>
+        <Route path="/locations" element={<Locations locations = {locations} page={locationPage} setPage={setLocationPage}/>}/>
         <Route path="/characters" element={<Characters characters={charList} page={page} setPage={setPage}/>}/>
         <Route path="/episodes" element={<Episodes episodes={episodes}/>}/>
         <Route path="/singleCharacter/:id" element={<SingleCharacter characters={charList}/>} />

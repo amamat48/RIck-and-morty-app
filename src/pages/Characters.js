@@ -18,7 +18,7 @@ export default function Characters({ characters, page, setPage }) {
       <h2 id='information'>Click on a card to view more information *buuuuuuuuuuuuurp*</h2>
       {characters ? characters.map((character, id) => {
         return (
-          <Link to={`/singleCharacter/${id}`}>
+          <Link to={`/singleCharacter/${character.id}`}>
             <CharacterCard props={character} />
 
           </Link>

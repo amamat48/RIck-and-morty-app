@@ -72,6 +72,12 @@ img {
   font-size: 16px;
   font-weight: bold;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.characterCardBody:hover {
+  box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.1);
 }
 
 .singleCharacterBox {
@@ -130,5 +136,20 @@ img {
 
 #locationName {
   margin-top: 15%;
+}
+
+.searchContainer {
+  width: 100%;
+  text-align: center;
+  height: 15%;
+}
+
+.searchInput {
+  margin-top: 10%;
+  height: 20px;
+}
+
+.submitButton:hover {
+  background: lightgreen;
 }
 

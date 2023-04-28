@@ -73,11 +73,16 @@ img {
   font-weight: bold;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease-in-out;
+  text-decoration: none;
 }
 
 .characterCardBody:hover {
   box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.4);
   transform: scale(1.1);
+}
+
+.characterCardBody:active {
+  text-decoration: none;
 }
 
 .singleCharacterBox {
@@ -100,6 +105,7 @@ img {
 
 .boxText {
   font-size: 2em;
+  text-decoration: none;
 }
 
 .buttonContainer{
@@ -151,5 +157,9 @@ img {
 
 .submitButton:hover {
   background: lightgreen;
+}
+
+a {
+  text-decoration: none;
 }
 

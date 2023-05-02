@@ -6,16 +6,16 @@ My Rick and Morty Information website is a website that allows users to explore 
 
 ### **My Rick and Morty Information website provides the following features:**
 
-*Character information*: Users can browse through a list of characters and click on a character to view detailed information about that character, such as their name, species, status, and more.
+***Character information***: Users can browse through a list of characters and click on a character to view detailed information about that character, such as their name, species, status, and more.
 
-*Location information*: Users can browse through a list of locations and click on a location to view detailed information about that location, such as its name, type, dimension, and more.
+***Location information***: Users can browse through a list of locations and click on a location to view detailed information about that location, such as its name, type, dimension, and more.
 
-*Episode information*: Users can browse through a list of episodes view information about the episodes listed, such as its name and air date.
+***Episode information***: Users can browse through a list of episodes view information about the episodes listed, such as its name and air date.
 
-*Search functionality*: Users can search for a specific character, location, or episode using the search bar. The search bar provides auto-suggestions to help users find what they're looking for quickly and easily.
+***Search functionality***: Users can search for a specific character, location, or episode using the search bar. The search bar provides auto-suggestions to help users find what they're looking for quickly and easily.
 Getting Started
 
-**To get started with the Rick and Morty API website, follow these steps**
+## **To get started with the Rick and Morty API website, follow these steps**
 
 Clone the repository onto your local machine.
 Once the repository is cloned doen,
@@ -28,5 +28,5 @@ The Rick and Morty API website is built using the Rick and Morty API, which prov
 
 ### Credits
 
-Thank you to Tishana, Dylan, and Kapser for helping through the process and my classmates for also helping me through my issues. 
+Thank you to Tishana, Dylan, and Kapser for helping through the process and my classmates for also helping me through my issues.
 

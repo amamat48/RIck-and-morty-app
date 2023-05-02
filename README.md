@@ -24,9 +24,10 @@ Click on a character or location to view detailed information about it.
 
 ### API Documentation
 
-The Rick and Morty API website is built using the Rick and Morty API, which provides a simple and easy-to-use interface for accessing the show's data. For more information about the API and its endpoints, check out the official documentation at [title]https://rickandmortyapi.com/documentation.
+The Rick and Morty API website is built using the Rick and Morty API, which provides a simple and easy-to-use interface for accessing the show's data. For more information about the API and its endpoints, check out the official documentation at https://rickandmortyapi.com/documentation.
 
 ### Credits
 
 Thank you to Tishana, Dylan, and Kapser for helping through the process and my classmates for also helping me through my issues.
+***https://github.com/amamat48/RIck-and-morty-app.git***
 

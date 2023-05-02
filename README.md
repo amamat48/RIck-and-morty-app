@@ -29,5 +29,5 @@ The Rick and Morty API website is built using the Rick and Morty API, which prov
 ### Credits
 
 Thank you to Tishana, Dylan, and Kapser for helping through the process and my classmates for also helping me through my issues.
-***https://github.com/amamat48/RIck-and-morty-app.git***
+***https://amari-rick-and-morty-website.onrender.com***
 

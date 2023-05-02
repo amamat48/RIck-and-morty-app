@@ -4,6 +4,7 @@ import { getCharacterByName, getEpisodeByName, getLocationByName } from '../serv
 import Characters from './Characters'
 import Locations from './Locations'
 import Episodes from './Episodes'
+import NotFound from '../components/NotFound'
 
 export default function Search() {
 
@@ -30,15 +31,21 @@ export default function Search() {
 
 
     return (
-        <div className='searchContainer'>
-            <form onSubmit={handleSubmit}>
-                <p>Search for a Rick and Morty Characcter, episode, or location!:</p>
-                <input className='searchInput' type="text" value={inputValue} onChange={handleChange} />
-                <button className="submitButton" type='submit'>Search</button>
-            </form>
-            {characters && <Characters characters={characters} />}
-            {!characters && locations && <Locations locations={locations} />}
-            {!characters && !locations && episodes && <Episodes episodes={episodes} />}
-        </div>
+        <>
+            <div className='searchContainer'>
+                <form onSubmit={handleSubmit}>
+                    <h1>Search for a Rick and Morty Characcter, episode, or location!</h1>
+                    <input className='searchInput' type="text" value={inputValue} onChange={handleChange} />
+                    <button className="submitButton" type='submit'>Search</button>
+                </form>
+            </div>
+
+            <div className="results">
+                {characters && <Characters characters={characters} />}
+                {!characters && locations && <Locations locations={locations} />}
+                {!characters && !locations && episodes && <Episodes episodes={episodes} />}
+                {!characters && !locations && !episodes && <NotFound />}
+            </div>
+        </>
     )
 }

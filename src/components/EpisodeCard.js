@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function EpisodeCard({ props }) {
     return (
-        <div className="characterContainer">
+        <div className="episodeContainer">
             {props.map((episode) => {
                 return (
                     <div className="card" key={episode.id}>

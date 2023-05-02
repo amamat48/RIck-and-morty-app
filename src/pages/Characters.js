@@ -14,7 +14,7 @@ export default function Characters({ characters, page, setPage }) {
 
 
   return (
-    <div>
+    <>
       <h2 id='information'>Click on a card to view more information *buuuuuuuuuuuuurp*</h2>
       {characters ? characters.map((character, id) => {
         return (
@@ -29,6 +29,6 @@ export default function Characters({ characters, page, setPage }) {
 
         {page > 1 ? <button onClick={prevPage}> Previous Page</button> : <></>}
       </div>
-    </div>
+    </>
   )
 }

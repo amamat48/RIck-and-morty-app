@@ -1,4 +1,8 @@
 
+html {
+  height: fit-content;
+}
+
 body {
   background: linear-gradient(55deg, #2B9348, #EEEF20, #007F5F);
 }
@@ -12,7 +16,6 @@ body {
   font-size: 2em;
   width: 98%;
   border-radius: 5em;
-  position: fixed;
   top: 0;
 }
 
@@ -21,7 +24,7 @@ body {
   text-decoration: none;
 }
 
-.characterContainer {
+.episodeContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -44,6 +47,12 @@ body {
   align-items: center;
 }
 
+.characterCard {
+  display: flex;
+  justify-content: center;
+  bottom: 40%;
+}
+
 .cardBody {
   color: white;
   font-size: 16px;
@@ -51,6 +60,8 @@ body {
 }
 
 img {
+  width: fit-content;
+  height: fit-content;
   padding-left: 5px;
 }
 
@@ -68,6 +79,7 @@ img {
   margin: 3em;
   border-radius: 5em;
   color: white;
+  width: 50%;
   text-align: center;
   font-size: 16px;
   font-weight: bold;
@@ -79,10 +91,6 @@ img {
 .characterCardBody:hover {
   box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.4);
   transform: scale(1.1);
-}
-
-.characterCardBody:active {
-  text-decoration: none;
 }
 
 .singleCharacterBox {
@@ -106,6 +114,10 @@ img {
 .boxText {
   font-size: 2em;
   text-decoration: none;
+}
+
+form {
+  height: 100vh;
 }
 
 .buttonContainer{
@@ -147,13 +159,18 @@ img {
 .searchContainer {
   width: 100%;
   text-align: center;
-  height: 15%;
+  height: auto;
+  top: -40%;
+
 }
 
 .searchInput {
   margin-top: 10%;
   height: 20px;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
 }
+
+
 
 .submitButton:hover {
   background: lightgreen;
@@ -162,4 +179,27 @@ img {
 a {
   text-decoration: none;
 }
+
+.notFound {
+  margin-top: -40%;
+  text-align: center;
+}
+
+#notFoundPicture {
+  width: 80%;
+}
+
+.results {
+  margin-top: -40%;
+  text-align: center;
+}
+
+#information {
+  margin-left: 27%;
+}
+
+.results > #information {
+  margin-left: 0%;
+}
+
 

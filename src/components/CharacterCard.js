@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function CharacterCard({ props }) {
     return (
-        <div>
+        <div className='characterContainer'>
             <div className="characterCard" key={props.id}>
                 <div className="characterCardBody">
                     <h2 className="name">{props.name}</h2>
@@ -13,7 +13,8 @@ export default function CharacterCard({ props }) {
                 </div>
 
             </div>
-
         </div>
+
+
     )
 }

@@ -8,7 +8,6 @@ export default function LocationCard({ props }) {
                     <h1 className="name">{props.name}</h1>
                     <p className='boxText'>Type: {props.type}</p>
                     <p className='boxText'>Dimension: {props.dimension}</p>
-                    <p className='boxText'>Gender: {props.gender}</p>
                 </div>
 
             </div>

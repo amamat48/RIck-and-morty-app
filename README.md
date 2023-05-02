@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Rick and Morty Information Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My Rick and Morty Information website is a website that allows users to explore information about the characters, locations, and episodes from the popular animated series, Rick and Morty. The website is built using the Rick and Morty API, which provides a simple and easy-to-use interface for accessing the show's data.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### **My Rick and Morty Information website provides the following features:**
 
-### `npm start`
+*Character information*: Users can browse through a list of characters and click on a character to view detailed information about that character, such as their name, species, status, and more.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+*Location information*: Users can browse through a list of locations and click on a location to view detailed information about that location, such as its name, type, dimension, and more.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+*Episode information*: Users can browse through a list of episodes view information about the episodes listed, such as its name and air date.
 
-### `npm test`
+*Search functionality*: Users can search for a specific character, location, or episode using the search bar. The search bar provides auto-suggestions to help users find what they're looking for quickly and easily.
+Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**To get started with the Rick and Morty API website, follow these steps**
 
-### `npm run build`
+Clone the repository onto your local machine.
+Once the repository is cloned doen,
+Browse through the list of characters, locations, and episodes, or use the search bar to find what you're looking for.
+Click on a character or location to view detailed information about it.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### API Documentation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The Rick and Morty API website is built using the Rick and Morty API, which provides a simple and easy-to-use interface for accessing the show's data. For more information about the API and its endpoints, check out the official documentation at [title]https://rickandmortyapi.com/documentation.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Credits
 
-### `npm run eject`
+Thank you to Tishana, Dylan, and Kapser for helping through the process and my classmates for also helping me through my issues. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

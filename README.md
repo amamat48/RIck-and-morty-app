@@ -18,7 +18,8 @@ Getting Started
 ## **To get started with the Rick and Morty API website, follow these steps**
 
 Clone the repository onto your local machine.
-Once the repository is cloned doen,
+Once the repository is cloned down, run the "npm install" command in your browser
+to view it locally, run the "npm start" command in your terminal
 Browse through the list of characters, locations, and episodes, or use the search bar to find what you're looking for.
 Click on a character or location to view detailed information about it.
 

@@ -27,7 +27,6 @@ export default function SingleCharacter(props) {
 
       setOriginUrlId(parseInt(newOriginUrl[newOriginUrl.length - 1]))
       setLocationUrlId(parseInt(newLocationUrl[newLocationUrl.length - 1]))
-      console.log('yes')
     }
     fetchCharacter()
 
